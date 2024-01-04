@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6; /* Espaciado entre líneas */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #ea5c1f;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #ffc105;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+
+}
+nav a:hover {
+  background: #9188f2;
+  transform: scale(1.8); /* Ajusta el tamaño al hacer hover */
+  }
+  
+section {
+  width: 85%; 
+  margin: 4% auto; 
+  padding: 4%; /* Espaciado interior */
+  border: 0.3em solid #ccc; /* Borde */
+  background-color: #f9f9f9; /* Color de fondo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  position: relative;
+  overflow: hidden; /* Evita que el contenido se salga de la sección */
+  padding-bottom: 100px;
+}
+
+.imagen-centrada {
+  text-align: center;
+}
+.imagen-centrada img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #8487e0;
+  color: #fff;
+  text-align: center;
+  padding:  1px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  position: relative; 
+  clear: both; 
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 45%;
+}
+
+.contact-info,
+.legal-info {
+  margin-bottom: 20px;
+}
+
+.acerca_de {
+  border: black 0.1em solid;
+  width: 50%;
+}
+
+#resultado {
+  display: none;
+  padding: 20px;
+  background-color: #ffbe8deb;
+  border: 0.1em solid #ccc;
+  box-shadow: 0 0 1% rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px; /* Espacio entre el botón y el resultado */
+    }
+
+    button {
+      font-size: 1.6em; /* Aumentar el tamaño del texto del botón */
+      padding: 25px 40px; /* Aumentar el relleno para hacer el botón más grande */
+      background: linear-gradient(to right, #ea5c1f, #ffc105, #9188f2); /* Gradiente con los colores deseados */
+      color: white; /* Color del texto */
+      border: none; /* Eliminar el borde */
+      border-radius: 8px; /* Redondear las esquinas */
+      cursor: pointer; /* Mostrar el cursor de manera apropiada */
+      transition: background 0.3s ease; /* Efecto de transición al pasar el mouse */
+      position: absolute;
+  left: 50%; /* Posición inicial centrada horizontalmente */
+  transform: translateX(-50%); /* Ajuste para centrar completamente */
+  bottom: 20px; /* Ajustar la distancia desde la parte inferior */
+    }
+    
+    button:hover {
+      background: linear-gradient(to right, #ff550081, #ffff006e, #0026ff4e); /* Cambio de gradiente al pasar el mouse */
+    }
+    
